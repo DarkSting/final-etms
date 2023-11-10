@@ -1,0 +1,42 @@
+/* Styling for the create tournament wrapper */
+.create-tournament-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the create tournament heading */
+.create-tournament-heading {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* Styling for the create tournament form */
+.create-tournament-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #d5dade;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 75px;
+}
+
+/* Styling for the labels within the create tournament form */
+.create-tournament-form label {
+  font-weight: 500;
+}
+
+/* Styling for the input fields and select within the create tournament form */
+.create-tournament-form input,
+.create-tournament-form select {
+  margin-bottom: 15px;
+}
+
+/* Styling for the buttons within the create tournament form */
+.create-tournament-form button {
+  width: 100%;
+}

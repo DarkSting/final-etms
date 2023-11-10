@@ -1,0 +1,90 @@
+/* Styling for the choose team title wrapper */
+.choose-team-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the choose team title heading */
+.choose-team-title-heading {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styling for the title card */
+.title-card {
+  height: 300px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for the hover state of the title card */
+.title-card:hover {
+  opacity: 85%;
+}
+
+/* Styling for the title card's title */
+.title-card .card-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #efefef;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  font-weight: 400;
+  color: black;
+}
+
+/* Styling for the card image */
+.card-image {
+  width: 100%;
+  height: calc(100% - 40px);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Styling for Counter-Strike: Global Offensive image */
+.cs-go {
+  background-image: url("../images/cs-go.jpg");
+}
+
+/* Styling for Dota 2 image */
+.dota-2 {
+  background-image: url("../images/dota-2.jpg");
+}
+
+/* Styling for Valorant image */
+.valorant {
+  background-image: url("../images/valorant.jpg");
+}
+
+/* Styling for League of Legends image */
+.lol {
+  background-image: url("../images/lol.jpg");
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the title card's title */
+  .title-card .card-title {
+    font-size: 17px;
+  }
+}

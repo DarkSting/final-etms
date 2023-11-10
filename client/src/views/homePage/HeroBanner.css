@@ -1,0 +1,64 @@
+/* Styling for the hero banner section */
+.hero-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/gamer-room.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+
+/* Styling for the hero banner title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Styling for the hero banner description */
+.hero-description {
+  font-size: 1.5rem;
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+  /* Styling for the hero banner section */
+  .hero-banner {
+    height: 50vh;
+    background-position: center;
+  }
+
+  /* Styling for the hero banner title */
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  /* Styling for the hero banner description */
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  /* Styling for the hero banner button */
+  .hero-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the hero banner section */
+  .hero-banner {
+    height: 45vh;
+    padding: 2rem;
+  }
+
+  /* Styling for the hero banner button */
+  .hero-button {
+    font-size: 0.75rem;
+  }
+}

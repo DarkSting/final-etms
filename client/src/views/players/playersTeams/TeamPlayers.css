@@ -1,0 +1,123 @@
+/* Styling for the team players wrapper */
+.team-players-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the team players heading */
+.team-players-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Styling for the team players list */
+.team-players-list {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the team players heading */
+.team-players-list-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 30px;
+}
+
+/* Styling for the list of team players */
+.team-players-list .list-group {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styling for each team player item */
+.team-players-list .list-group-item {
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the remove button */
+.team-players-remove-button {
+  margin-right: 5px;
+  background-color: #dc3545;
+  border: none;
+  width: 80px;
+}
+
+/* Styling for hover state of remove button */
+.team-players-remove-button:hover {
+  filter: brightness(90%);
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+  /* Styling for the team players heading */
+  .team-players-heading {
+    font-size: 28px;
+  }
+
+  /* Styling for the team players list heading */
+  .team-players-list-heading {
+    font-size: 20px;
+  }
+
+  /* Styling for the list of team players */
+  .team-players-list .list-group {
+    max-width: 400px;
+  }
+
+  /* Styling for each team player item */
+  .team-players-list .list-group-item {
+    font-size: 16px;
+  }
+
+  /* Styling for the remove button */
+  .team-players-remove-button {
+    width: 70px;
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the team players heading */
+  .team-players-heading {
+    font-size: 24px;
+  }
+
+  /* Styling for the team players list heading */
+  .team-players-list-heading {
+    font-size: 18px;
+  }
+
+  /* Styling for the list of team players */
+  .team-players-list .list-group {
+    max-width: 300px;
+  }
+
+  /* Styling for each team player item */
+  .team-players-list .list-group-item {
+    font-size: 14px;
+  }
+
+  /* Styling for the remove button */
+  .team-players-remove-button {
+    width: 60px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,79 @@
+/* Styling for the main container */
+.organizers-players-login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e7e9eb;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Styling for the content within the main container */
+.organizers-players-login-content {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Styling for the login heading */
+.organizers-players-login-login-heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* Styling for the login sub-heading */
+.organizers-players-login-login-sub-heading {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Styling for the login sections */
+.organizers-players-login-organizers-login-section,
+.organizers-players-login-players-login-section {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #babcbf;
+}
+
+/* Styling for the animation container */
+.organizers-players-login-animation-container {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Styling for the responsive buttons */
+.organizers-players-login-btn-responsive {
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+/* Media query for screens with a max width of 768px */
+@media (max-width: 768px) {
+  /* Styling for the main container */
+  .organizers-players-login-container {
+    padding: 30px;
+    min-height: 35vh;
+  }
+
+  /* Styling for the login heading */
+  .organizers-players-login-login-heading {
+    font-size: 22px;
+  }
+
+  /* Styling for the login sub-heading */
+  .organizers-players-login-login-sub-heading {
+    font-size: 16px;
+  }
+
+  /* Styling for the login sections */
+  .organizers-players-login-organizers-login-section,
+  .organizers-players-login-players-login-section {
+    padding: 30px;
+  }
+}

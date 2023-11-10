@@ -1,0 +1,127 @@
+/* Styling for the organizers login container */
+.organizers-login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #3f464f;
+}
+
+/* Styling for the content area */
+.organizers-login-content {
+  flex: 1;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Styling for the form container */
+.organizers-login-form-container {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Styling for the title */
+.organizers-login-title {
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+/* Styling for the login button container */
+.organizers-login-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Styling for the login button */
+.organizers-login-button {
+  min-width: 30vh;
+}
+
+/* Styling for the register link text */
+.organizers-login-register-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+/* Styling for the register link */
+.organizers-login-register-link a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+/* Styling for the hover state of the register link */
+.organizers-login-register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for screens with max width of 1366px */
+@media screen and (max-width: 1366px) {
+  /* Styling for the content area */
+  .organizers-login-content {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  /* Styling for the form container */
+  .organizers-login-form-container {
+    max-width: 35%;
+  }
+
+  /* Styling for the title */
+  .organizers-login-title {
+    font-size: 30px;
+  }
+
+  /* Styling for the login button */
+  .organizers-login-button {
+    min-width: 25vh;
+  }
+}
+
+/* Media query for screens with max width of 768px */
+@media screen and (max-width: 768px) {
+  /* Styling for the content area */
+  .organizers-login-content {
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  /* Styling for the form container */
+  .organizers-login-form-container {
+    max-width: 55%;
+  }
+
+  /* Styling for the title */
+  .organizers-login-title {
+    font-size: 24px;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the content area */
+  .organizers-login-content {
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  /* Styling for the form container */
+  .organizers-login-form-container {
+    max-width: 80%;
+  }
+
+  /* Styling for the title */
+  .organizers-login-title {
+    font-size: 21px;
+  }
+
+  /* Styling for the login button */
+  .organizers-login-button {
+    min-width: 15vh;
+  }
+}

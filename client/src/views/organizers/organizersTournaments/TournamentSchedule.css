@@ -1,0 +1,121 @@
+/* Styling for the tournament schedule wrapper */
+.tournament-schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the tournament schedule form */
+.tournament-schedule-form {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Styling for the tournament schedule heading */
+.tournament-schedule-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the tournament schedule input fields */
+.tournament-schedule-input {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* Styling for the tournament schedule add match button */
+.tournament-schedule-add-match-button {
+  background-color: #2d9180;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for the hover state of the tournament schedule add match button */
+.tournament-schedule-add-match-button:hover {
+  background-color: #2d7e76;
+}
+
+/* Styling for the tournament schedule list */
+.tournament-schedule-list {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Styling for the tournament schedule table */
+.tournament-schedule-table {
+  width: 100%;
+  background-color: #fdfdfd;
+}
+
+/* Styling for the tournament schedule table header */
+.tournament-schedule-table-header {
+  font-weight: 600;
+}
+
+/* Styling for the tournament schedule table cell */
+.tournament-schedule-table-cell {
+  padding: 10px;
+}
+
+/* Styling for the tournament schedule save button */
+.tournament-schedule-save-button {
+  background-color: #2d9180;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  width: 80px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for the hover state of the tournament schedule save button */
+.tournament-schedule-save-button:hover {
+  background-color: #2d7e76;
+}
+
+/* Styling for the tournament schedule edit button */
+.tournament-schedule-edit-button {
+  background-color: #e2b11c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  width: 80px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for the hover state of the tournament schedule edit button */
+.tournament-schedule-edit-button:hover {
+  background-color: #c49815;
+}
+
+/* Styling for the tournament schedule delete button */
+.tournament-schedule-delete-button {
+  background-color: #be2d3b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  width: 80px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for the hover state of the tournament schedule delete button */
+.tournament-schedule-delete-button:hover {
+  background-color: #a1212e;
+}

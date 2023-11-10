@@ -1,0 +1,102 @@
+/* Styling for the players tournament registration successful wrapper */
+.players-tournament-registration-successful-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the players tournament registration successful header */
+.players-tournament-registration-successful-header {
+  position: relative;
+  background-color: #818f9f;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+/* Styling for the players tournament registration successful heading */
+.players-tournament-registration-successful-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Styling for the players tournament registration successful details */
+.players-tournament-registration-successful-details {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Styling for the confirmation label */
+.players-tournament-registration-successful-label {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Styling for the button container */
+.players-tournament-registration-successful-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styling for the confirmation button */
+.players-tournament-registration-successful-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 auto;
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+  /* Styling for the players tournament registration successful header */
+  .players-tournament-registration-successful-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* Styling for the players tournament registration successful heading */
+  .players-tournament-registration-successful-heading {
+    font-size: 28px;
+  }
+
+  /* Styling for the confirmation label */
+  .players-tournament-registration-successful-label {
+    font-size: 16px;
+  }
+
+  /* Styling for the confirmation button */
+  .players-tournament-registration-successful-button {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the players tournament registration successful header */
+  .players-tournament-registration-successful-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  /* Styling for the players tournament registration successful heading */
+  .players-tournament-registration-successful-heading {
+    font-size: 24px;
+  }
+
+  /* Styling for the confirmation label */
+  .players-tournament-registration-successful-label {
+    font-size: 14px;
+  }
+
+  /* Styling for the confirmation button */
+  .players-tournament-registration-successful-button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,217 @@
+/* Styling for the players register container */
+.players-register-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 130vh;
+  background-color: #3f464f;
+}
+
+/* Styling for the content area */
+.players-register-content {
+  flex: 1;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Styling for the form container */
+.players-register-form-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Styling for the title */
+.players-register-title {
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+/* Styling for the registration button container */
+.players-register-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Styling for the registration button */
+.players-register-button {
+  min-width: 30vh;
+}
+
+/* Styling for the login link text */
+.players-register-login-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+/* Styling for the login link */
+.players-register-login-link a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+/* Styling for the hover state of the login link */
+.players-register-login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the registration successful pop-up container */
+.players-register-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the registration successful pop-up title */
+.players-register-modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Styling for the registration successful pop-up message */
+.players-register-modal-message {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Styling for the registration successful pop-up footer */
+.players-register-modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the registration successful pop-up button */
+.players-register-modal-footer button {
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Styling for the registration successful pop-up button hover */
+.players-register-modal-footer button:hover {
+  background-color: #6a7681;
+  border: none;
+}
+
+/* Styling for the registration successful pop-up button focus */
+.players-register-modal-footer button:focus {
+  outline: none;
+}
+
+/* Styling for the asterisk indicating mandatory fields */
+.required {
+  color: #c94c4c;
+  margin-left: 2px;
+}
+
+/* Media query for screens with max width of 1366px */
+@media screen and (max-width: 1366px) {
+  .players-register-content {
+    /* Styling for the content area */
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  /* Styling for the form container */
+  .players-register-form-container {
+    max-width: 40%;
+  }
+
+  /* Styling for the title */
+  .players-register-title {
+    font-size: 30px;
+  }
+
+  /* Styling for the registration button */
+  .players-register-button {
+    min-width: 25vh;
+  }
+}
+
+/* Media query for screens with max width of 768px */
+@media screen and (max-width: 768px) {
+  /* Styling for the content area */
+  .players-register-content {
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  /* Styling for the form container */
+  .players-register-form-container {
+    max-width: 60%;
+  }
+
+  /* Styling for the title */
+  .players-register-title {
+    font-size: 24px;
+  }
+
+  /* Styling for the registration successful pop-up container */
+  .players-register-modal {
+    width: 80%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Styling for the registration successful pop-up title */
+  .players-register-modal-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the content area */
+  .players-register-content {
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  /* Styling for the form container */
+  .players-register-form-container {
+    max-width: 85%;
+  }
+
+  /* Styling for the title */
+  .players-register-title {
+    font-size: 21px;
+  }
+
+  /* Styling for the registration button */
+  .players-register-button {
+    min-width: 15vh;
+  }
+
+  /* Styling for the registration successful pop-up container */
+  .players-register-modal {
+    width: 80%;
+    max-width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Styling for the registration successful pop-up title */
+  .players-register-modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  /* Styling for the registration successful pop-up message */
+  .players-register-modal-message {
+    font-size: 14px;
+  }
+}
