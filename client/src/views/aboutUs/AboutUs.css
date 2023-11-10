@@ -1,0 +1,54 @@
+/* Styling for the wrapper container for the entire page */
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+}
+
+/* Styling for the container for the about section */
+.about-container {
+  flex: 1;
+  padding: 40px;
+  background-color: #e4e8ec;
+  color: black;
+}
+
+/* Styling for the title of the about section */
+.about-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the description paragraphs in the about section */
+.about-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Styling for the contact title */
+.contact-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the contact description */
+.contact-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the contact information list */
+.contact-list {
+  font-size: 18px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+/* Styling for the contact information list items */
+.contact-list li {
+  margin-bottom: 10px;
+}

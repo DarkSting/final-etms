@@ -1,0 +1,12 @@
+/* Styling for the footer container */
+.footer-container {
+  margin-top: auto;
+  background-color: #e9edf1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for paragraph elements within the footer */
+.footer-container p {
+  margin: 0;
+}

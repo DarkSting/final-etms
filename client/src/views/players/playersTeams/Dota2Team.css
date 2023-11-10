@@ -1,0 +1,42 @@
+/* Styling for the create team wrapper */
+.create-team-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the create team heading */
+.create-team-heading {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* Styling for the create team form */
+.create-team-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #d5dade;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 75px;
+}
+
+/* Styling for the labels within the create team form */
+.create-team-form label {
+  font-weight: 500;
+}
+
+/* Styling for the input fields and select within the create team form */
+.create-team-form input,
+.create-team-form select {
+  margin-bottom: 15px;
+}
+
+/* Styling for the buttons within the create team form */
+.create-team-form button {
+  width: 100%;
+}

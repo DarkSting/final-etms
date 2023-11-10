@@ -1,0 +1,66 @@
+/* Styling for the Counter-Strike news wrapper */
+.counter-strike-news-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+}
+
+/* Styling for the Counter-Strike news container */
+.counter-strike-news-container {
+  background-color: #e4e8ec;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Styling for the Counter-Strike news heading */
+.counter-strike-news-heading {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Styling for the Counter-Strike news list */
+.counter-strike-news-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for the Counter-Strike news item */
+.counter-strike-news-item {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the Counter-Strike news title */
+.counter-strike-news-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Styling for the hover state of Counter-Strike news title */
+.counter-strike-news-title:hover {
+  color: #0d47a1;
+}
+
+/* Styling for the Counter-Strike news description */
+.counter-strike-news-description {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Styling for the Counter-Strike news time */
+.counter-strike-news-time {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}

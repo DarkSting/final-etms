@@ -1,0 +1,131 @@
+/* Styling for the tournament page wrapper */
+.tournament-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the tournament page header */
+.tournament-page-header {
+  position: relative;
+  background-color: #818f9f;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+/* Styling for the tournament name */
+.tournament-page-tournament-name {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Styling for the tournament buttons container */
+.tournament-page-tournament-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the tournament button */
+.tournament-page-tournament-button {
+  flex: 1;
+  border: 1px solid #dadde0;
+  border-radius: 2px;
+  padding: 10px;
+  color: #f1f1f1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling for the hover state of the tournament button */
+.tournament-page-tournament-button:hover {
+  background-color: #818f9f;
+  color: white;
+}
+
+/* Styling for the tournament details container */
+.tournament-page-tournament-details {
+  flex: 1;
+  padding-top: 30px;
+  padding-left: 30px;
+  background-color: #e4e8ec;
+}
+
+/* Styling for each tournament description */
+.tournament-page-tournament-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Styling for each tournament detail */
+.tournament-page-tournament-detail {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+  /* Styling for the tournament page header */
+  .tournament-page-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* Styling for the tournament name */
+  .tournament-page-tournament-name {
+    font-size: 36px;
+  }
+
+  /* Styling for the tournament button */
+  .tournament-page-tournament-button {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  /* Styling for each tournament description */
+  .tournament-page-tournament-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  /* Styling for each tournament detail */
+  .tournament-page-tournament-detail {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the tournament page header */
+  .tournament-page-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  /* Styling for the tournament name */
+  .tournament-page-tournament-name {
+    font-size: 28px;
+  }
+
+  /* Styling for the tournament button */
+  .tournament-page-tournament-button {
+    font-size: 14px;
+  }
+
+  /* Styling for each tournament description */
+  .tournament-page-tournament-description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  /* Styling for each tournament detail */
+  .tournament-page-tournament-detail {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+}

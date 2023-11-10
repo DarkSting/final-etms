@@ -1,0 +1,161 @@
+/* Styling for the organizers section */
+.organizers-section {
+  background-color: #e7e9eb;
+  padding: 50px;
+  padding-left: 75px;
+  border-right: 2px solid #babcbf;
+}
+
+/* Styling for the players section */
+.players-section {
+  background-color: #e7e9eb;
+  padding: 50px;
+  padding-left: 75px;
+}
+
+/* Styling for the organizers and players sections */
+.organizers-section,
+.players-section {
+  min-height: 40vh;
+}
+
+/* Styling for the teams section */
+.teams-section {
+  background-color: #e7e9eb;
+  padding: 50px;
+  padding-left: 75px;
+  border-right: 2px solid #babcbf;
+}
+
+/* Styling for the news section */
+.news-section {
+  background-color: #e7e9eb;
+  padding: 50px;
+  padding-left: 75px;
+}
+
+/* Styling for the teams and news sections */
+.teams-section,
+.news-section {
+  min-height: 40vh;
+}
+
+/* Styling for the animation container */
+.animation-container {
+  width: 400px;
+  height: 400px;
+}
+
+/* Styling for responsive button */
+.btn-responsive {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+/* Media query for screens with max width of 1200px */
+@media (max-width: 1200px) {
+  /* Styling for responsive button */
+  .btn-responsive {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media query for screens with max width of 1051px */
+@media (max-width: 1051px) {
+  /* Styling for the organizers, players, and teams sections */
+  .organizers-section,
+  .players-section,
+  .teams-section {
+    border-bottom: 2px solid #babcbf;
+  }
+}
+
+/* Media query for screens with max width of 969px */
+@media (max-width: 969px) {
+  /* Styling for responsive button */
+  .btn-responsive {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the organizers, players, teams, and news sections */
+  .organizers-section,
+  .players-section,
+  .teams-section,
+  .news-section {
+    min-height: 35vh;
+  }
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+  /* Styling for the animation container */
+  .animation-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Styling for the organizers, players, teams, and news sections */
+  .organizers-section,
+  .players-section,
+  .teams-section,
+  .news-section {
+    padding-left: 50px;
+  }
+}
+
+/* Media query for screens with max width of 520px */
+@media (max-width: 520px) {
+  /* Styling for responsive button */
+  .btn-responsive {
+    width: 150px;
+    height: 62px;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the organizers, players, teams, and news sections */
+  .organizers-section,
+  .players-section,
+  .teams-section,
+  .news-section {
+    min-height: 40vh;
+  }
+}
+
+/* Media query for screens with max width of 420px */
+@media (max-width: 420px) {
+  /* Styling for responsive button */
+  .btn-responsive {
+    width: 120px;
+    height: 62px;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the animation container */
+  .animation-container {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Media query for screens with max width of 340px */
+@media (max-width: 340px) {
+  /* Styling for responsive button */
+  .btn-responsive {
+    width: 100px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the organizers, players, teams, and news sections */
+  .organizers-section,
+  .players-section,
+  .teams-section,
+  .news-section {
+    min-height: 45vh;
+    padding: 30px;
+  }
+}

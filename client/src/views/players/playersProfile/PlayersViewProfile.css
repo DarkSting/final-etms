@@ -1,0 +1,164 @@
+/* Styling for the wrapper that contains the entire profile view */
+.pvp-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4e8ec;
+}
+
+/* Styling for the container that holds the profile information */
+.pvp-container {
+  flex-grow: 1;
+  margin: 20px auto;
+  min-width: 700px;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+/* Styling for the header section */
+.pvp-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+/* Styling for the header text */
+.pvp-header-text {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Styling for the player's name */
+.pvp-name {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Styling for the username */
+.pvp-username {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Styling for the container that holds the profile details */
+.pvp-details-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  background-color: #ecedef;
+  margin-bottom: 50px;
+}
+
+/* Styling for each detail section */
+.pvp-details {
+  margin-bottom: 15px;
+}
+
+/* Styling for the label of each detail */
+.pvp-details-label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Styling for the value of each detail */
+.pvp-details-value {
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 2px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Media query for screens with max width of 768px */
+@media screen and (max-width: 768px) {
+  /* Styling for the container that holds the profile information */
+  .pvp-container {
+    padding: 0 20px;
+    min-width: 450px;
+    max-width: 600px;
+  }
+
+  /* Styling for the header text */
+  .pvp-header-text {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  /* Styling for the player's name */
+  .pvp-name {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  /* Styling for the username */
+  .pvp-username {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  /* Styling for the label of each detail */
+  .pvp-details-label {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  /* Styling for the value of each detail */
+  .pvp-details-value {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media screen and (max-width: 480px) {
+  /* Styling for the container that holds the profile information */
+  .pvp-container {
+    margin: 10px;
+    min-width: 250px;
+    max-width: none;
+  }
+
+  /* Styling for the header text */
+  .pvp-header-text {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  /* Styling for the player's name */
+  .pvp-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  /* Styling for the username */
+  .pvp-username {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  /* Styling for the container that holds the profile details */
+  .pvp-details-container {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* Styling for the label of each detail */
+  .pvp-details-label {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  /* Styling for the value of each detail */
+  .pvp-details-value {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}

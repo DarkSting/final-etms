@@ -1,0 +1,27 @@
+/* Styling for the custom navbar */
+.custom-navbar {
+  background-color: #11161d;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Styling for the navbar links */
+.custom-navbar .nav-link {
+  color: white !important;
+}
+
+/* Styling for the glowing border effect */
+.custom-glowing-border {
+  position: relative;
+  box-shadow: 0 0 2px #003d4e, 0 0 5px #003d4e, 0 0 10px #003d4e;
+}
+
+/* Styling for aligning content on the right side of the navbar */
+.custom-navbar .ml-auto {
+  margin-left: auto;
+}
+
+/* Styling for adding right margin to the dropdown toggle */
+.custom-navbar .ml-auto .dropdown-toggle {
+  margin-right: 100px;
+}
