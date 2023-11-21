@@ -1,0 +1,26 @@
+.tournament-brackets-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4e8ec;
+}
+
+.tournament-brackets-header {
+  position: relative;
+  background-color: #818f9f;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.tournament-brackets-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+
+.tournament-brackets-content {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}

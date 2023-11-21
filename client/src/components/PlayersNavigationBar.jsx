@@ -102,11 +102,7 @@ function PlayersNavigationBar() {
             </NavDropdown.Item>
             <NavDropdown.Divider />
             {/* Logout link */}
-            <NavDropdown.Item
-              as={Link}
-              to="/players/logout"
-              id="nav-players-logout-link"
-            >
+            <NavDropdown.Item as={Link} to="/" id="nav-players-logout-link">
               Logout
             </NavDropdown.Item>
           </NavDropdown>

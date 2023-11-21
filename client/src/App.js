@@ -15,7 +15,9 @@ import Valorant from "./views/organizers/organizersTournaments/Valorant";
 import LeagueOfLegends from "./views/organizers/organizersTournaments/LeagueOfLegends";
 import TournamentPage from "./views/organizers/organizersTournaments/TournamentPage";
 import TournamentRegistration from "./views/organizers/organizersTournaments/TournamentRegistration";
+import TournamentBrackets from "./views/organizers/organizersTournaments/TournamentBrackets";
 import TournamentSchedule from "./views/organizers/organizersTournaments/TournamentSchedule";
+import TournamentReport from "./views/organizers/organizersTournaments/TournamentReport";
 import ManageTournaments from "./views/organizers/organizersTournaments/ManageTournaments";
 import PlayersRegister from "./views/players/playersRegister/PlayersRegister";
 import PlayersLogin from "./views/players/playersLogin/PlayersLogin";
@@ -23,12 +25,28 @@ import PlayersDashboard from "./views/players/playersDashboard/PlayersDashboard"
 import PlayersProfile from "./views/players/playersProfile/PlayersProfile";
 import PlayersViewProfile from "./views/players/playersProfile/PlayersViewProfile";
 import PlayersEditProfile from "./views/players/playersProfile/PlayersEditProfile";
+import PlayersTournaments from "./views/players/playersTournaments/PlayersTournaments";
+import PlayersTournamentPage from "./views/players/playersTournaments/PlayersTournamentPage";
+import PlayersTournamentRegistration from "./views/players/playersTournaments/PlayersTournamentRegistration";
+import PlayersTournamentRegistrationSuccessful from "./views/players/playersTournaments/PlayersTournamentRegistrationSuccessful";
+import PlayersTournamentBrackets from "./views/players/playersTournaments/PlayersTournamentBrackets";
+import PlayersTournamentSchedule from "./views/players/playersTournaments/PlayersTournamentSchedule";
+import PlayersTournamentRegistrations from "./views/players/playersRegistrations/PlayersTournamentRegistrations";
 import PlayersTeams from "./views/players/playersTeams/PlayersTeams";
 import ChooseTeamTitle from "./views/players/playersTeams/ChooseTeamTitle";
 import CounterStrikeGlobalOffensiveTeam from "./views/players/playersTeams/CounterStrikeGlobalOffensiveTeam";
 import Dota2Team from "./views/players/playersTeams/Dota2Team";
 import ValorantTeam from "./views/players/playersTeams/ValorantTeam";
 import LeagueOfLegendsTeam from "./views/players/playersTeams/LeagueOfLegendsTeam";
+import TeamPage from "./views/players/playersTeams/TeamPage";
+import TeamPageAllTeamsView from "./views/players/playersTeams/TeamPageAllTeamsView";
+import TeamPageOpenedTeamsView from "./views/players/playersTeams/TeamPageOpenedTeamsView";
+import TeamPageJoinedTeamsView from "./views/players/playersTeams/TeamPageJoinedTeamsView";
+import TeamRequests from "./views/players/playersTeams/TeamRequests";
+import TeamPlayers from "./views/players/playersTeams/TeamPlayers";
+import TeamPlayersViewOnly from "./views/players/playersTeams/TeamPlayersViewOnly";
+import ViewAndManageTeams from "./views/players/playersTeams/ViewAndManageTeams";
+import OrganizersAndPlayersLogin from "./views/news/OrganizersAndPlayersLogin";
 import OrganizersCounterStrikeNews from "./views/news/OrganizersCounterStrikeNews";
 import PlayersCounterStrikeNews from "./views/news/PlayersCounterStrikeNews";
 import AboutUs from "./views/aboutUs/AboutUs";
@@ -75,52 +93,24 @@ function App() {
           element={<LeagueOfLegends />}
         />
         <Route
-          path="/organizers/cs-go/tournament/:tournamentId"
+          path="/organizers/:esportsTitle/tournament/:tournamentId"
           element={<TournamentPage />}
         />
         <Route
-          path="/organizers/dota-2/tournament/:tournamentId"
-          element={<TournamentPage />}
-        />
-        <Route
-          path="/organizers/valorant/tournament/:tournamentId"
-          element={<TournamentPage />}
-        />
-        <Route
-          path="/organizers/lol/tournament/:tournamentId"
-          element={<TournamentPage />}
-        />
-        <Route
-          path="/organizers/cs-go/tournament/:tournamentId/registration"
+          path="/organizers/:esportsTitle/tournament/:tournamentId/registration"
           element={<TournamentRegistration />}
         />
         <Route
-          path="/organizers/dota-2/tournament/:tournamentId/registration"
-          element={<TournamentRegistration />}
+          path="/organizers/:esportsTitle/tournament/:tournamentId/brackets"
+          element={<TournamentBrackets />}
         />
         <Route
-          path="/organizers/valorant/tournament/:tournamentId/registration"
-          element={<TournamentRegistration />}
-        />
-        <Route
-          path="/organizers/lol/tournament/:tournamentId/registration"
-          element={<TournamentRegistration />}
-        />
-        <Route
-          path="/organizers/cs-go/tournament/:tournamentId/schedule"
+          path="/organizers/:esportsTitle/tournament/:tournamentId/schedule"
           element={<TournamentSchedule />}
         />
         <Route
-          path="/organizers/dota-2/tournament/:tournamentId/schedule"
-          element={<TournamentSchedule />}
-        />
-        <Route
-          path="/organizers/valorant/tournament/:tournamentId/schedule"
-          element={<TournamentSchedule />}
-        />
-        <Route
-          path="/organizers/lol/tournament/:tournamentId/schedule"
-          element={<TournamentSchedule />}
+          path="/organizers/:esportsTitle/tournament/:tournamentId/report"
+          element={<TournamentReport />}
         />
         <Route
           path="/organizers/manage-tournaments"
@@ -134,6 +124,39 @@ function App() {
         <Route path="/players/profile" element={<PlayersProfile />} />
         <Route path="/players/view-profile" element={<PlayersViewProfile />} />
         <Route path="/players/edit-profile" element={<PlayersEditProfile />} />
+        <Route path="/players/tournaments" element={<PlayersTournaments />} />
+        <Route
+          path="/players/:esportsTitle/tournament/:tournamentId"
+          element={<PlayersTournamentPage />}
+        />
+        <Route
+          path="/players/:esportsTitle/tournament/:tournamentId/registration"
+          element={<PlayersTournamentRegistration />}
+        />
+        {/* <Route
+          path="/players/:esportsTitle/tournament/:tournamentId/registration/payment/:teamId"
+          element={<PlayersTournamentRegistrationPayment />}
+        />
+        <Route
+          path="/players/:esportsTitle/tournament/:tournamentId/registration/card-payment/:teamId"
+          element={<PlayersTournamentRegistrationCardPayment />}
+        /> */}
+        <Route
+          path="/players/:esportsTitle/tournament/:tournamentId/registration/successful/:teamId"
+          element={<PlayersTournamentRegistrationSuccessful />}
+        />
+        <Route
+          path="/players/:esportsTitle/tournament/:tournamentId/brackets"
+          element={<PlayersTournamentBrackets />}
+        />
+        <Route
+          path="/players/:esportsTitle/tournament/:tournamentId/schedule"
+          element={<PlayersTournamentSchedule />}
+        />
+        <Route
+          path="/players/registrations"
+          element={<PlayersTournamentRegistrations />}
+        />
         <Route path="/players/teams" element={<PlayersTeams />} />
         <Route path="/players/create-team" element={<ChooseTeamTitle />} />
         <Route
@@ -149,8 +172,48 @@ function App() {
           path="/players/create-team/lol"
           element={<LeagueOfLegendsTeam />}
         />
+        <Route
+          path="/players/:esportsTitle/team/:teamId"
+          element={<TeamPage />}
+        />
+        <Route
+          path="/players/:esportsTitle/all/team/:teamId"
+          element={<TeamPageAllTeamsView />}
+        />
+        <Route
+          path="/players/:esportsTitle/opened/team/:teamId"
+          element={<TeamPageOpenedTeamsView />}
+        />
+        <Route
+          path="/players/:esportsTitle/joined/team/:teamId"
+          element={<TeamPageJoinedTeamsView />}
+        />
+        <Route
+          path="/players/:esportsTitle/team/:teamId/requests"
+          element={<TeamRequests />}
+        />
+        <Route
+          path="/players/:esportsTitle/team/:teamId/players"
+          element={<TeamPlayers />}
+        />
+        <Route
+          path="/players/:esportsTitle/all/team/:teamId/players"
+          element={<TeamPlayersViewOnly />}
+        />
+        <Route
+          path="/players/:esportsTitle/opened/team/:teamId/players"
+          element={<TeamPlayersViewOnly />}
+        />
+        <Route
+          path="/players/view-manage-teams"
+          element={<ViewAndManageTeams />}
+        />
 
         {/* News routes */}
+        <Route
+          path="/organizers-players/login"
+          element={<OrganizersAndPlayersLogin />}
+        />
         <Route
           path="/organizers/news/counter-strike"
           element={<OrganizersCounterStrikeNews />}

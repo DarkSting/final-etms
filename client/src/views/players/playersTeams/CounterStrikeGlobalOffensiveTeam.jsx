@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Container, Form, Button, Dropdown } from "react-bootstrap";
+import { Container, Form, Button, Dropdown, Alert } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import axios from "../../../middleware/axios";
 import PlayersNavigationBar from "../../../components/PlayersNavigationBar";
 import Footer from "../../../components/Footer";
 import "./CounterStrikeGlobalOffensiveTeam.css";
@@ -10,6 +12,8 @@ function CounterStrikeGlobalOffensiveTeam() {
   const [teamTag, setTeamTag] = useState("");
   const [teamDescription, setTeamDescription] = useState("");
   const [selectedClan, setSelectedClan] = useState("");
+  const [validationError, setValidationError] = useState("");
+  const navigate = useNavigate();
 
   // List of available clans
   const clans = [
@@ -26,14 +30,37 @@ function CounterStrikeGlobalOffensiveTeam() {
   ];
 
   // Handle form submit
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    console.log("Creating team with the following details:");
-    console.log("Team Name:", teamName);
-    console.log("Team Tag:", teamTag);
-    console.log("Team Description:", teamDescription);
-    console.log("Selected Clan:", selectedClan);
-    console.log("Captain (Current User):", "Replace with current user data");
+
+    // Clear previous validation error
+    setValidationError("");
+
+    try {
+      // Set the fixed value for Esports title
+      const esportsTitle = "cs-go";
+
+      // Send a POST request to the server's '/api/players/create-team/cs-go' endpoint
+      const response = await axios.post("/api/players/create-team/cs-go", {
+        esportsTitle,
+        teamName,
+        teamTag,
+        teamDescription,
+        selectedClan,
+      });
+
+      console.log(response.data);
+      const teamId = response.data.teamId;
+
+      // Handle successful team creation
+      navigate(`/players/cs-go/team/${teamId}`);
+    } catch (error) {
+      if (error.response && error.response.data) {
+        setValidationError(error.response.data.error);
+      } else {
+        setValidationError("An error occurred. Please try again.");
+      }
+    }
   };
 
   // Reset form changes
@@ -58,6 +85,8 @@ function CounterStrikeGlobalOffensiveTeam() {
         <h1 className="create-team-heading">
           Create Counter-Strike: Global Offensive Team
         </h1>
+        {/* Render an error message using the Alert component if a validation error exists */}
+        {validationError && <Alert variant="danger">{validationError}</Alert>}
         <Form className="create-team-form" onSubmit={handleFormSubmit}>
           <h3 className="mb-3">Team Details</h3>
           {/* Team name */}

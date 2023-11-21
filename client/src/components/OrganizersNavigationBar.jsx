@@ -86,11 +86,7 @@ function OrganizersNavigationBar() {
             </NavDropdown.Item>
             <NavDropdown.Divider />
             {/* Logout link */}
-            <NavDropdown.Item
-              as={Link}
-              to="/organizers/logout"
-              id="nav-organizers-logout-link"
-            >
+            <NavDropdown.Item as={Link} to="/" id="nav-organizers-logout-link">
               Logout
             </NavDropdown.Item>
           </NavDropdown>

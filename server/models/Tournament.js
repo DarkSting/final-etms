@@ -66,7 +66,7 @@ const tournamentSchema = new mongoose.Schema({
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
-    ref: "Organizers",
+    ref: "Organizer",
   },
   // Registration start date
   startDateRegistration: {

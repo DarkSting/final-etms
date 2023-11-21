@@ -93,7 +93,7 @@ function OrganizersAndPlayers() {
               className="animation-container"
             />
             <div className="d-flex">
-              <Link to="/teams">
+              <Link to="/players/login">
                 <Button
                   className="btn btn-secondary me-4 btn-responsive"
                   id="home-teams-view-button"
@@ -118,7 +118,7 @@ function OrganizersAndPlayers() {
               className="animation-container"
             />
             <div className="d-flex">
-              <Link to="/news/counter-strike">
+              <Link to="/organizers-players/login">
                 <Button
                   className="btn btn-secondary btn-responsive"
                   id="home-news-read-button"

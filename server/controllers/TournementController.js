@@ -14,6 +14,7 @@ const assignTeam = async(req,res)=>{
 
   })
 
+
   if(!foundOne){
 
     return res.status(404).json({msg:'coudnt find the tournement'})
@@ -40,7 +41,7 @@ const assignTeam = async(req,res)=>{
 
 const updateMatchStatus = async(req,res)=>{
 
-  const{round,matchIndex,wonparticipantIndex,matchstatus,tournementName} = req.body;
+  const{round,matchIndex,wonparticipantIndex,tournementName} = req.body;
 
   const lostparticipantIndex = wonparticipantIndex==1?0:1
 
@@ -62,14 +63,17 @@ const updateMatchStatus = async(req,res)=>{
 
 
     //updating wonparticipant index
-    foundOne.roundHistory[round-1].matches[matchIndex].participants[wonparticipantIndex].status = status[matchstatus];
+    foundOne.roundHistory[round-1].matches[matchIndex].participants[wonparticipantIndex].status = status[1];
     foundOne.roundHistory[round-1].matches[matchIndex].participants[wonparticipantIndex].isWinner = true;
     foundOne.roundHistory[round-1].matches[matchIndex].participants[wonparticipantIndex].resultText = "Won"
 
     //updating lostparticipant index
-    foundOne.roundHistory[round-1].matches[matchIndex].participants[lostparticipantIndex].status = status[matchstatus];
+    foundOne.roundHistory[round-1].matches[matchIndex].participants[lostparticipantIndex].status = status[1];
     foundOne.roundHistory[round-1].matches[matchIndex].participants[lostparticipantIndex].isWinner = false;
     foundOne.roundHistory[round-1].matches[matchIndex].participants[lostparticipantIndex].resultText = "Lost"
+
+    isCurrentRoundCompleted(foundOne,round,matchIndex,status)
+      
     foundOne.save();
 
     return res.status(200).json({msg:"ok"})
@@ -78,6 +82,25 @@ const updateMatchStatus = async(req,res)=>{
     return res.status(500).json(error)
   }
   
+
+}
+
+const isCurrentRoundCompleted = (model,round,matchIndex,status)=>{
+
+  model.roundHistory[round-1].matches[matchIndex].state = status[1];
+
+  for(let i=0;model.roundHistory[round-1].length;i++){
+
+    if(model.roundHistory[round-1].matches[matchIndex].state!==status[1]){
+      return false;
+    }
+
+  }
+
+  model.roundHistory[round-1].isCompleted = true;
+  model.currentRound = round+1;
+
+  return true;
 
 }
 
@@ -211,18 +234,45 @@ const getTournement = async(req,res)=>{
   }
 
   let matches = [];
+  let completeRounds =[];
+  let currentRound = [];
+
 
   //getting matches of the tournement 
   for(let i=0;i<foundTournement.roundHistory.length;i++){
+    let cRound =[];
     for(let j=0;j<foundTournement.roundHistory[i].matches.length;j++){
+
+      //pushing all the matches
       matches.push(foundTournement.roundHistory[i].matches[j])
+
+      
+      //pushing the current round matches
+      cRound.push(foundTournement.roundHistory[i].matches[j]); 
+      
+      if(foundTournement.roundHistory[i].currentRound===i+1){
+        currentRound.push(foundTournement.roundHistory[i].matches[j])
+      }
+
+    }
+
+    if(foundTournement.roundHistory[i].isCompleted){
+      completeRounds.push(cRound);
     }
   }
 
-  console.log(matches);
+  let obj={
+    allMatches : matches,
+    currentRound : currentRound,
+    completeRounds : completeRounds
+  }
 
-  return res.status(200).json(matches)
+  console.log(obj);
+
+  return res.status(200).json(obj)
 }
+
+
 
 module.exports = {
   CreateTournementMatches,

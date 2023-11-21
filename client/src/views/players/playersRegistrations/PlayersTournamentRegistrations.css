@@ -1,0 +1,91 @@
+/* Styling for the players tournament registrations wrapper */
+.players-tournament-registrations-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Styling for the players tournament registrations header */
+.players-tournament-registrations-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the players tournament registrations heading */
+.players-tournament-registrations-heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Styling for the players tournament registrations list */
+.players-tournament-registrations-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the unordered list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for the tournament item */
+.players-tournament-registrations-tournament-item {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #cdcdcd;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Styling for the hover state of the tournament item */
+.players-tournament-registrations-tournament-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the tournament details */
+.players-tournament-registrations-tournament-details {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the tournament name */
+.players-tournament-registrations-tournament-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Styling for the tournament description */
+.players-tournament-registrations-tournament-description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Styling for the tournament date */
+.players-tournament-registrations-tournament-date {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Styling for the tournament location */
+.players-tournament-registrations-tournament-location {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Styling for the no registrations message */
+.players-tournament-registrations-no-registrations-message {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}

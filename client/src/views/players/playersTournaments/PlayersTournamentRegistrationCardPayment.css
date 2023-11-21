@@ -1,0 +1,136 @@
+/* Styling for the players tournament registration card payment wrapper */
+.players-tournament-registration-card-payment-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* Styling for the players tournament registration card payment header */
+.players-tournament-registration-card-payment-header {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Styling for the players tournament registration card payment heading */
+.players-tournament-registration-card-payment-heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+}
+
+/* Styling for the players tournament registration card payment form */
+.players-tournament-registration-card-payment-form {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Styling for the form groups in the card payment form */
+.players-tournament-registration-card-payment-form-group {
+  margin-bottom: 15px;
+}
+
+/* Styling for labels in the card payment form */
+.players-tournament-registration-card-payment-form-group label {
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Styling for input fields in the card payment form */
+.players-tournament-registration-card-payment-form-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+/* Styling for the payment button */
+.players-tournament-registration-card-payment-button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+  /* Styling for the players tournament registration card payment heading */
+  .players-tournament-registration-card-payment-heading {
+    font-size: 28px;
+  }
+
+  /* Styling for the players tournament registration card payment form */
+  .players-tournament-registration-card-payment-form {
+    max-width: 400px;
+  }
+
+  /* Styling for the debit/credit card */
+  .rccs__card--front {
+    transform: scale(0.8);
+  }
+
+  /* Styling for labels in the card payment form */
+  .players-tournament-registration-card-payment-form-group label {
+    font-size: 14px;
+  }
+
+  /* Styling for input fields in the card payment form */
+  .players-tournament-registration-card-payment-form-group input[type="text"] {
+    font-size: 14px;
+  }
+
+  /* Styling for the payment button */
+  .players-tournament-registration-card-payment-button {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens with max width of 480px */
+@media (max-width: 480px) {
+  /* Styling for the players tournament registration card payment heading */
+  .players-tournament-registration-card-payment-heading {
+    font-size: 24px;
+  }
+
+  /* Styling for the players tournament registration card payment form */
+  .players-tournament-registration-card-payment-form {
+    max-width: 300px;
+  }
+
+  /* Styling for the debit/credit card */
+  .rccs__card--front {
+    transform: scale(0.6);
+    transform-origin: 40%;
+  }
+
+  /* Styling for labels in the card payment form */
+  .players-tournament-registration-card-payment-form-group label {
+    font-size: 12px;
+  }
+
+  /* Styling for input fields in the card payment form */
+  .players-tournament-registration-card-payment-form-group input[type="text"] {
+    font-size: 12px;
+  }
+
+  /* Styling for the payment button */
+  .players-tournament-registration-card-payment-button {
+    font-size: 14px;
+  }
+}

@@ -16,7 +16,7 @@ function LeagueOfLegends() {
   const [maxTeams, setMaxTeams] = useState("");
   const [isOnline, setIsOnline] = useState(false);
   const [tournamentLocation, setTournamentLocation] = useState("");
-  const [tournamentFormat, setTournamentFormat] = useState("");
+  const [tournamentFormat, setTournamentFormat] = useState("singleElimination");
   const [tournamentRules, setTournamentRules] = useState("");
   const [validationError, setValidationError] = useState("");
   const navigate = useNavigate();
@@ -181,22 +181,6 @@ function LeagueOfLegends() {
               />
             </Form.Group>
           )}
-
-          {/* Tournament format */}
-          <Form.Group controlId="tournamentFormat">
-            <Form.Label>Tournament Format</Form.Label>
-            <Form.Control
-              as="select"
-              value={tournamentFormat}
-              id="lol-tournament-format"
-              onChange={(e) => setTournamentFormat(e.target.value)}
-            >
-              <option value="">Select format</option>
-              <option value="singleElimination">Single Elimination</option>
-              <option value="doubleElimination">Double Elimination</option>
-              <option value="roundRobin">Round Robin</option>
-            </Form.Control>
-          </Form.Group>
 
           {/* Tournament rules */}
           <Form.Group controlId="tournamentRules">

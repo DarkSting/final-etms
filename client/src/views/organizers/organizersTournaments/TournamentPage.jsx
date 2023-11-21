@@ -57,23 +57,31 @@ function TournamentPage() {
         <h1 className="tournament-page-tournament-name">
           {tournamentData.tournament.tournamentName}
         </h1>
+        {/* Report button */}
+        <Link
+          to={`/organizers/${esportsTitle}/tournament/${tournamentId}/report`}
+        >
+          <button className="btn btn-success tournament-page-report-button">
+            Report
+          </button>
+        </Link>
       </div>
       <div className="tournament-page-tournament-buttons-container">
         {/* Links to different tournament sections */}
         <Link
-          to={`/organizers/cs-go/tournament/${tournamentId}/registration`}
+          to={`/organizers/${esportsTitle}/tournament/${tournamentId}/registration`}
           className="btn btn-secondary tournament-page-tournament-button"
         >
           Registration
         </Link>
         <Link
-          to={`/organizers/cs-go/tournament/${tournamentId}/brackets`}
+          to={`/organizers/${esportsTitle}/tournament/${tournamentId}/brackets`}
           className="btn btn-secondary tournament-page-tournament-button"
         >
           Brackets
         </Link>
         <Link
-          to={`/organizers/cs-go/tournament/${tournamentId}/schedule`}
+          to={`/organizers/${esportsTitle}/tournament/${tournamentId}/schedule`}
           className="btn btn-secondary tournament-page-tournament-button"
         >
           Schedule

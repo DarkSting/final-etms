@@ -24,27 +24,20 @@ function AboutUs() {
             </div>
             {/* About description */}
             <p className="about-description mt-5">
-              Welcome to our Esports tournament management system! Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Nulla sodales
-              tristique mi, non hendrerit lectus cursus at. Integer vitae
-              vehicula dolor, in tempus odio. Morbi vestibulum consequat dolor,
-              id sollicitudin libero dignissim sit amet. Ut id dapibus risus.
-              Nunc vitae lectus sit amet mauris cursus fermentum. Vivamus a orci
-              et quam dictum rutrum. Vestibulum pulvinar libero ac mi placerat,
-              at dapibus turpis facilisis. Suspendisse ut purus ipsum.
-              Pellentesque vel tincidunt elit. Vestibulum tempor sapien libero,
-              nec tincidunt orci varius sed.
+              Welcome to our Esports tournament management system! We are
+              dedicated to transforming the Sri Lankan Esports industry with our
+              specially tailored web application. Our platform offers a range of
+              features designed to enhance the experience for both tournament
+              organizers and Esports athletes.
             </p>
             <p className="about-description">
-              Etiam consequat augue eu massa ullamcorper, vel blandit neque
-              scelerisque. Nulla bibendum eros et ullamcorper vehicula. Cras
-              mattis aliquam libero, vitae venenatis turpis volutpat id. Sed
-              pharetra euismod aliquam. In vitae odio at urna consequat
-              interdum. Vestibulum facilisis ullamcorper orci ut ultrices. In
-              hac habitasse platea dictumst. Pellentesque habitant morbi
-              tristique senectus et netus et malesuada fames ac turpis egestas.
-              Praesent vehicula a lacus ut efficitur. In vel libero ac enim
-              facilisis volutpat at vitae neque.
+              Our system focuses on providing a streamlined registration and
+              access process, effective tools for tournament management, and
+              empowering Esports athletes to create teams, manage them, and
+              participate in tournaments seamlessly. With improved tournament
+              experiences, secure profile management, and easy online
+              registration fee payments, we aim to contribute to the growth and
+              success of the Esports industry in Sri Lanka.
             </p>
           </Col>
         </Row>

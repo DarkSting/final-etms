@@ -31,7 +31,7 @@ const teamSchema = new mongoose.Schema({
     required: true,
   },
   // Associated clan of the team
-  associatedClan: {
+  selectedClan: {
     type: String,
     required: true,
   },
@@ -39,14 +39,13 @@ const teamSchema = new mongoose.Schema({
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
-    ref: "Players",
+    ref: "Player",
   },
   // Players of the team
   players: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      required: true,
-      ref: "Players",
+      ref: "Player",
       validate: {
         validator: function (value) {
           return value.length <= 4;
@@ -55,9 +54,14 @@ const teamSchema = new mongoose.Schema({
       },
     },
   ],
+  // Track the status of the team
+  isOpen: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 // Creating the Team model using the teamSchema
 const Team = mongoose.model("Team", teamSchema);
 
-module.exports = Team
+module.exports = Team;

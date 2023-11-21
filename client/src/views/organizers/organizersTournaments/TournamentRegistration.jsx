@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import axios from "../../../middleware/axios";
@@ -14,6 +14,34 @@ function TournamentRegistration() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [registrationStatus, setRegistrationStatus] = useState(false);
+
+  // Use useEffect to fetch current registration status when the component mounts
+  useEffect(() => {
+    const fetchCurrentRegistrationStatus = async () => {
+      try {
+        const response = await axios.get(
+          `/api/organizers/${esportsTitle}/tournament/${tournamentId}/current-registration-status`
+        );
+        const {
+          isRegistrationOpen,
+          startDateRegistration,
+          endDateRegistration,
+        } = response.data;
+
+        setRegistrationStatus(isRegistrationOpen);
+
+        if (isRegistrationOpen) {
+          // Set start and end dates if registration is open
+          setStartDate(new Date(startDateRegistration));
+          setEndDate(new Date(endDateRegistration));
+        }
+      } catch (error) {
+        console.error("Error fetching current registration status:", error);
+      }
+    };
+
+    fetchCurrentRegistrationStatus();
+  }, [esportsTitle, tournamentId]);
 
   // Handle change in start date input
   const handleStartDateChange = (event) => {
